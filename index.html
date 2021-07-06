@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+
+    <style>
+        .f1{
+            background-image: url("https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .forms{
+            padding-top:40px;
+            margin-bottom: 50px;
+            color: white;
+  
+            
+        }
+        label{
+            margin-left: 400px;
+            
+        }
+        button{
+            margin: 50px 0px 0px 550px ;
+        }
+        .forms1{
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function myfun() {
+            var a = document.getElementById("password").value;
+            var b = document.getElementById("re-enter").value;
+            if (a == "") {
+                document.getElementById("msg1").innerHTML = "**Please Fill Password";
+                return false;
+            }
+            if (b == "") {
+                document.getElementById("msg1").innerHTML = "**Please Fill Password";
+                return false;
+            }
+
+
+            if (a != b) {
+                document.getElementById("msg1").innerHTML = "**Password's doesn't match";
+                return false;
+            }
+        }
+    </script>
+ 
+    <form class="f1" action="https://www.google.com/webhp?authuser=1" onsubmit="return myfun()">
+        <h1 style="text-align: center;margin-top: 70px;">Registration Form</h1>
+       
+        <div class="container-fluid forms">
+            
+            <div class="row forms1">
+                <div class="col">
+                    <label for="username" style="font-weight: 500;">First name:</label>
+                </div>
+                <div class="col">
+                    <input type="text" class="col-md-6" minlength="5" maxlength="5" name="username" pattern="[A-Za-z]+"
+                        title="Only Alphabets of minlength 5" required>
+                </div>
+            </div>
+            <div class="row forms1">
+                <div class="col">
+                    <label for="username" style="font-weight: 500;">Middle name:</label>
+                </div>
+                <div class="col">
+                    <input type="text" class="col-md-6" minlength="5" maxlength="5" name="username" pattern="[A-Za-z]+"
+                        title="Only Alphabets of minlength 5" required>
+                </div>
+            </div>
+            <div class="row forms1">
+                <div class="col">
+                    <label for="username" style="font-weight: 500;">Last name:</label>
+                </div>
+                <div class="col">
+                    <input type="text" class="col-md-6" minlength="5" maxlength="5" name="username" pattern="[A-Za-z]+"
+                        title="Only Alphabets of minlength 5" required>
+                </div>
+            </div>
+            <div class="row forms1">
+                <div class="col">
+
+                    <label for="username" style="font-weight: 500;">SEX</label>
+                </div>
+                <div class="col">
+                    <input type="radio" name="gender" value="male" required> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other" > Other
+                </div>
+            </div>
+            <div class="row forms1">
+                <div class="col">
+                    <label for="username" style="font-weight: 500;">Date Of Birth</label>
+                </div>
+                <div class="col">
+            
+                    <input type="date" id="birthday" name="birthday" required>
+                  
+                </div>
+            </div>
+            <div class="row forms1">
+                <div class="col">
+                    <label for="username" style="font-weight: 500;">Email id:</label>
+                </div>
+                <div class="col">
+                    <input type="email" class="col-md-6" name="emailid" required>
+                </div>
+            </div>
+            <div class="row forms1">
+                <div class="col">
+                    <label for="username" style="font-weight: 500;">Cell number:</label>
+                </div>
+                <div class="col">
+                    <input type="text" class="col-md-6" name="cellnumber"  pattern="[0-9]+"
+                         required>
+                </div>
+            </div>
+            <div class="row forms1">
+                <div class="col">
+                    <label for="username" style="font-weight: 500;">Address:</label>
+                </div>
+                <div class="col">
+                    <input type="text" class="col-md-6" name="Address" 
+                        title="Only Alphabets of minlength 5" required>
+                </div>
+            </div>
+            <div class="row forms1">
+                <div class="col">
+
+                    <label for="username" style="font-weight: 500;">Department:</label>
+                </div>
+                <div class="col">
+                    <input type="text" class="col-md-6" pattern="[A-Za-z]+"
+                      required>
+                </div>
+            </div>
+
+            <div class="row forms1">
+                <div class="col">
+                    <label for="username" style="font-weight: 500;">Centennial Id:</label>
+                </div>
+                <div class="col">
+                    <input type="text" class="col-md-6"   
+                   required>
+                </div>
+            </div>
+            <div class="row forms1">
+                <div class="col">
+
+                    <label for="username" style="font-weight: 500;">Language</label>
+                </div>
+                <div class="col">
+                    <input type="radio" required> Java
+                    <input type="radio"> PHP
+                    <input type="radio"  > C++
+                </div>
+            </div>
+            <div class="row forms1">
+                <div class="col">
+                    <label for="password" style="font-weight: 500;">password:</label>
+                </div>
+                <div class="col">
+                    <input type="password" class="col-md-6" id="password" minlength="5" maxlength="5"
+                        title="Only 5 Numerics" pattern="[0-9]+" required>
+                    <span id="msg1" style="color: red; ">
+
+                    </span>
+                </div>
+            </div>
+            <div class="row forms1">
+                <div class="col">
+                    <label for="re-enter" style="font-weight: 500;">re-password:</label>
+                </div>
+                <div class="col">
+                    <input type="password" class="col-md-6" id="re-enter" minlength="5" maxlength="5"
+                        title="Only 5 Numerics" pattern="[0-9]+" required>
+                    <span id="msg2">
+
+                    </span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+    </form>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
